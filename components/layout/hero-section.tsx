@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   const containerVariants = {
@@ -11,7 +11,7 @@ export function HeroSection() {
         delayChildren: 0.3,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -23,7 +23,7 @@ export function HeroSection() {
         ease: "easeOut",
       },
     },
-  }
+  };
 
   return (
     <section className="py-20 bg-gradient-to-br from-white to-purple-50">
@@ -41,17 +41,26 @@ export function HeroSection() {
             Powering the Future of Modular Compute
           </motion.h1>
 
-          <motion.p className="text-xl md:text-2xl text-gray-600 mb-8" variants={itemVariants}>
-            Decentralized Compute for Web3
+          <motion.p
+            className="text-xl md:text-2xl text-gray-600 mb-8"
+            variants={itemVariants}
+          >
+            Alchemy combines the most powerful web3 developer products and tools
+            with resources, community and legendary support.  
+            
           </motion.p>
 
           <motion.div variants={itemVariants}>
-            <Button variant="default" size="lg" className="font-medium bg-[#A374FF] hover:bg-[#A374FF]/90">
+            <Button
+              variant="default"
+              size="lg"
+              className="font-medium bg-[#A374FF] hover:bg-[#A374FF]/90"
+            >
               Explore CoreNet
             </Button>
           </motion.div>
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
